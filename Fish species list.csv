@@ -1,0 +1,245 @@
+ID,Family,Family2,Commonname,f_code,scientific name,Trophic Level,Max body size,Length category,Dietary group,Comercial Fishery,Game Fishery,Aquarium Fishery
+1,ANGEL,Pomacanthidae,Blue,hobea,Holacanthus bermudensis,3,45,MED,SPON,minor,yes,yes
+2,ANGEL,Pomacanthidae,cherubfish,ceara,Centropyge argi,2.0,8,SMALL,TURF,none,none,yes
+3,ANGEL,Pomacanthidae,Flameback,ceaua,Centropyge aurantonotus,2.0,8,SMALL,TURF,none,none,yes
+4,ANGEL,Pomacanthidae,french,popaa,Pomacanthus paru,2.85,41.1,MED,SPON,minor,none,yes
+,ANGEL,Pomacanthidae,french,popaj,Pomacanthus paru,2.85,41.1,MED,SPON,none,none,yes
+6,ANGEL,Pomacanthidae,grey,poara,Pomacanthus arcuatus,2.9,60,MED,SPON,minor,none,yes
+7,ANGEL,Pomacanthidae,queen,hocia,Holacanthus ciliaris,3.0,45,MED,SPON,minor,none,yes
+8,ANGEL,Pomacanthidae,rock beauty,hotra,Holacanthus tricolor,3.0,35,MED,SPON,minor,none,yes
+8,ANGEL,Pomacanthidae,rock beauty,hotrj,Holacanthus tricolor,3.0,35,MED,SPON,none,none,yes
+10,BARRACUDA,Sphyraenidae,great barracuda,spbaa,Sphyraena barracuda,4.5,200,LARGE,PISC,minor,yes,yes
+11,BARRACUDA,Sphyraenidae,southern sennet,sppia,Sphyraena picudilla,4.5,66.06,LARGE,PISC,minor,yes,none
+,BIGEYES,Priacanthidae,glasseye,hecra,Heteropriacanthus cruentatus,3.75,50.7,LARGE,MINV,minor,none,yes
+20,BONNETMOUTH,,boga,invia,Inermia vittata,3.2,23.0,MEDSMALL,MINV,minor,none,none
+25,BOXFISH,Ostraciidae,honeycomb cowfish,lapoa,Acanthostracion polygonius,3,50,MED,OMNI,yes,none,yes
+26,BOXFISH,Ostraciidae,sqrawled cowfish,laqua,Acanthostracion quadricornis,3.0,55,MED,OMNI,minor,none,yes
+225,BURRFISH,,bridled burrfish,chana,Chilomycterus antennatus,3.4,38.0,MED,SINV,none,none,none
+222,BURRFISH,,web burrfish,cianaa,Chilomycterus antillarum,3.4,30,MED,SINV,none,none,none
+27,BUTTERFLY,,4-eye,chcaa,Chaetodon capistratus,3.3,7.5,SMALL,SINV,none,none,yes
+,BUTTERFLY,,4-eye,chcaj,Chaetodon capistratus,3.3,7.5,SMALL,SINV,none,none,yes
+29,BUTTERFLY,,banded,chsta,Chaetodon striatus,3.2,16,MEDSMALL,SINV,none,none,yes
+,BUTTERFLY,,banded,chstj,Chaetodon striatus,3.2,16,MEDSMALL,SINV,none,none,yes
+,BUTTERFLY,,bank,praya,Prognathodes aya,3,14,MEDSMALL,SINV,none,none,minor
+31,BUTTERFLY,,Longsnout,chaca,Chaetodon aculeatus,3,10,SMALL,SINV,none,none,yes
+32,BUTTERFLY,,reef,chsea,Chaetodon sedentarius,2.8,15,MEDSMALL,SINV,none,none,yes
+33,BUTTERFLY,,spotfin,choca,Chaetodon ocellatus,3.3,20,MEDSMALL,SINV,none,none,yes
+35,CHUB,Kyphosidae,chub,kyspa,Kyphosus incisor,2.0,104.37,LARGE,MALG,minor,yes,none
+36,DAMSEL,,3-spot,stpla,stegastes planifrons,2.6,13,MEDSMALL,THER,none,none,yes
+,DAMSEL,,3-spot,stplj,stegastes planifrons,2.6,13,MEDSMALL,THER,none,none,yes
+38,DAMSEL,,beaugregory,stlea,Stegastes leucostictus,3.1,10,SMALL,THER,none,none,yes
+,DAMSEL,,beaugregory,stlej,Stegastes leucostictus,3.1,10,SMALL,THER,none,none,yes
+40,DAMSEL,,bicolor,stpaa,Stegastes partitus,3.1,10,SMALL,THER,none,none,yes
+,DAMSEL,,bicolor,stpaj,Stegastes partitus,3.1,10,SMALL,THER,none,none,yes
+42,DAMSEL,,blue chromis,chcya,Chromis cyanea,3.1,15,MEDSMALL,DPLA,none,none,yes
+,DAMSEL,,blue chromis,chcyj,Chromis cyanea,3.1,15,MEDSMALL,DPLA,none,none,yes
+44,DAMSEL,,brown chromis,chmua,Chromis multilineata,3.0,20,MEDSMALL,DPLA,none,none,yes
+,DAMSEL,,brown chromis,chmuj,Chromis multilineata,3.0,20,MEDSMALL,DPLA,none,none,yes
+46,DAMSEL,,cocoa,stvaa,Stegastes variabilis,2.5,12.5,MEDSMALL,THER,none,none,yes
+,DAMSEL,,cocoa,stvaj,Stegastes variabilis,2.5,12.5,MEDSMALL,THER,none,none,yes
+48,DAMSEL,,dusky,stfua,Stegastes fuscus,3.1,12.6,MEDSMALL,THER,none,none,yes
+,DAMSEL,,dusky,stfuj,Stegastes fuscus,3.1,12.6,MEDSMALL,THER,none,none,yes
+50,DAMSEL,,longfin,stdia,Stegastes diencaeus,3.1,12.5,MEDSMALL,THER,none,none,yes
+,DAMSEL,,longfin,stdij,Stegastes diencaeus,3.1,12.5,MEDSMALL,THER,none,none,yes
+52,DAMSEL,,Sgt Major,absaa,Abudefduf saxatilis,3.4,22.9,MEDSMALL,OMNI,minor,none,yes
+,DAMSEL,,Sgt Major,absaj,Abudefduf saxatilis,3.4,22.9,MEDSMALL,OMNI,minor,none,yes
+53,DAMSEL,,sunshinefish,chinj,Chromis insolata,3,16,MEDSMALL,DPLA,none,none,yes
+54,DAMSEL,,yellow tail,micha,Microspathodon chrysurus,2.1,21,MEDSMALL,THER,none,none,yes
+,DAMSEL,,yellow tail,michj,Microspathodon chrysurus,2.1,21,MEDSMALL,THER,none,none,yes
+,DAMSEL,,yellowtail reeffish,chena,Chromis enchrysura,3.4,10.0,SMALL,DPLA,none,none,none
+21,DRUM,Sciaenidae,cubbyu,pauma,Pareques umbrosus,3.6,25,MEDSMALL,MINV,minor,none,none
+22,DRUM,Sciaenidae,highhat,eqaca,Pareques acuminatus,3.6,23,MEDSMALL,MINV,minor,none,yes
+23,DRUM,Sciaenidae,jacknife fish,eqlaa,Equetus lanceolatus,3.4,25,MEDSMALL,MINV,minor,none,yes
+56,DRUM,Sciaenidae,spotted,eqpua,Equetus punctatus,3.5,27,MEDSMALL,MINV,minor,none,yes
+,DRUM,Sciaenidae,spotted,eqpuj,Equetus punctatus,3.5,27,MEDSMALL,MINV,none,none,yes
+58,FILEFISH,Monacanthidae,fringed,mocia,Monacanthus ciliatus,2.7,20,MEDSMALL,OMNI,none,none,yes
+59,FILEFISH,Monacanthidae,orangespot,capua,Cantherhunes pullus,2.6,20,MEDSMALL,OMNI,none,none,yes
+,FILEFISH,Monacanthidae,orangespot,capuj,Cantherhunes pullus,2.6,20,MEDSMALL,OMNI,none,none,yes
+,FILEFISH,Monacanthidae,pygmy,mosea,Monacanthus setifer,,,,,,,
+60,FILEFISH,Monacanthidae,scrawled,alsca,Aluterus scriptus,2.8,110,LARGE,OMNI,none,yes,yes
+61,FILEFISH,Monacanthidae,slender,motua,Monacanthus tuckeri,2.7,10,SMALL,OMNI,none,none,yes
+,FILEFISH,Monacanthidae,slender,motuj,Monacanthus tuckeri,2.7,10,SMALL,OMNI,none,none,yes
+63,FILEFISH,Monacanthidae,whitespot,camaa,Cantherhines macrocerus,3,46,MED,OMNI,none,none,yes
+64,FLOUNDER,Bothidae,peacock,bolua,Bothus lunatus,4.5,46,MED,SAND,minor,none,yes
+65,GOATFISH,Mullidae,spotted,psmaa,Pseudupeneus maculatus,3.5,30,MEDSMALL,SINV,yes,none,yes
+66,GOATFISH,Mullidae,yellow,mumaa,Mulloidichthys martinicus,3.25,39.4,MED,SAND,minor,none,none
+,GRUNT,Haemulidae,black,haboa,Haemulon bonariense,3.54,40,MED,MINV,yes,none,yes
+84,GRUNT,Haemulidae,black margate,ansua,Anisotremus surinamensis,3.3,76,LARGE,MINV,yes,none,yes
+83,GRUNT,Haemulidae,blue stripe,hasca,Haemulon sciurus,3.4,46.00,MED,MINV,minor,none,yes
+85,GRUNT,Haemulidae,caesar,hacaa,Haemulon carbonarium,3.3,36,MED,MINV,minor,none,yes
+,GRUNT,Haemulidae,caesar,hacaj,Haemulon carbonarium,3.3,36,MED,MINV,none,none,yes
+87,GRUNT,Haemulidae,cottonwick,hamea,Haemulon melanurum,2.2,33,MED,MINV,minor,none,yes
+88,GRUNT,Haemulidae,french,hafla,Haemulon flavolineatum,3.3,30,MEDSMALL,MINV,yes,none,yes
+,GRUNT,Haemulidae,french,haflj,Haemulon flavolineatum,3.3,30,MEDSMALL,MINV,none,none,yes
+90,GRUNT,Haemulidae,latin,hasda,Haemulon steindachneri,3.5,30,MED,MINV,minor,none,yes
+91,GRUNT,Haemulidae,porkfish,anvia,Anisotremus virginicus,3.4,40.6,MED,MINV,minor,yes,yes
+,GRUNT,Haemulidae,porkfish,anvij,Anisotremus virginicus,3.4,40.6,MED,MINV,minor,yes,yes
+93,GRUNT,Haemulidae,sailors choice,hapaa,Haemulon parra,3.5,41.2,MED,MINV,minor,none,yes
+94,GRUNT,Haemulidae,smallmouth,hacha,Haemulon chrysargyreum,3.3,23,MEDSMALL,MINV,minor,none,yes
+95,GRUNT,Haemulidae,spanish,hamaa,Haemulon macrostomum,3.3,43,MED,MINV,minor,none,yes
+96,GRUNT,Haemulidae,striped,hasta,Haemulon striatum,3.4,28,MEDSMALL,MINV,minor,none,yes
+98,GRUNT,Haemulidae,tomtate,haaua,Haemulon aurolineatum,3.2,25,MEDSMALL,MINV,minor,none,yes
+99,GRUNT,Haemulidae,unidentified juvenile,haunj,Unidentified juvenile GRUNT,,,,,,,
+100,GRUNT,Haemulidae,white,hapla,Haemulon plumieri,3.4,53,MED,MINV,minor,yes,yes
+101,GRUNT,Haemulidae,white margate,haala,Haemulon album,3.2,79,MED,MINV,yes,yes,yes
+,GURNARD,,flying,davoa,Dactylopterus volitans,3.64,50,MED,MINV,yes,yes,yes
+115,HAWKFISH,,redspotted,ampia,Amblycirrhitus pinos,3.2,11.932,SMALL,MINV,none,none,yes
+,JACK,Carangidae,african pompano,alcia,Alectis ciliaris,3.81,150,LARGE,MCAR,yes,yes,yes
+116,JACK,Carangidae,barjack,carua,Carangoides ruber,4.31,69,LARGE,PISC,yes,yes,none
+219,JACK,Carangidae,black jack,calua,Caranx lugubris,4.5,100.0,LARGE,PISC,minor,yes,none
+117,JACK,Carangidae,blue runner,cacra,Caranx cryos,4.4,70,LARGE,PISC,minor,yes,yes
+118,JACK,Carangidae,crevalle,cahia,Caranx hippos,4.0,124,LARGE,PISC,yes,yes,yes
+119,JACK,Carangidae,horse-eye,calaa,Caranx latus,4.4,115.89,LARGE,PISC,minor,yes,yes
+,JACK,Carangidae,mackerel scad,demaa,Decapterus macarellus,3.4,46,MED,PISC,yes,yes,none
+148,JACK,Carangidae,permit,trfaa,Trachinotus falcatus,3.2,147.559,LARGE,MINV,yes,yes,yes
+,JACK,Carangidae,rainbow,elbia,Elagatis bipinnulata,3.59,180,LARGE,PISC,yes,yes,none
+120,JACK,Carangidae,yellow,cabta,Caranx bartholomaei,4.5,100.0,LARGE,PISC,yes,yes,none
+121,JAWFISH,,yellowhead,opaua,Opistognathus aurifrons,3.1,10,SMALL,DPLA,none,none,yes
+122,LIZARDFISH,Synodontidae,sand diver,syina,Synodus intermedius,4.2,46,MED,PISC,minor,none,yes
+123,MACKEREL,Scombridae,cero,screa,Scomberomorus regalis,4.5,183,LARGE,PISC,minor,yes,none
+,MACKEREL,Scombridae,little tunny,euala,Euthynnnus alletteratus,4.49,122,LARGE,PISC,yes,yes,none
+,MACKEREL,Scombridae,wahoo,acsoa,Acanthocybium solandri,4.4,250,LARGE,PISC,yes,yes,none
+124,MOJARRA,Gerreidae,yellowfin,gecia,Gerres cinereus,3.3,41,MED,SAND,minor,none,none
+,MULLET,,white,mucua,Mugil curema,2.01,90,LARGE,TURF,yes,none,none
+127,PARROT,Scaridae,blue,sccoa,Scarus coeruleus,2,129,LARGE,SCRP,minor,none,yes
+128,PARROT,Scaridae,bluelip,crroa,Cryptotomus roseus,2,13.0,MEDSMALL,SCRP,none,none,yes
+,PARROT,Scaridae,bluelip,crroj,Cryptotomus roseus,2,13.0,MEDSMALL,SCRP,none,none,yes
+129,PARROT,Scaridae,bucktooth,spraa,Sparisoma radians,2.0,20.0,MEDSMALL,SCRP,none,none,yes
+,PARROT,Scaridae,bucktooth,spraj,Sparisoma radians,2.0,20.0,MEDSMALL,SCRP,none,none,yes
+130,PARROT,Scaridae,emerald,niusa,Nicholsina usta,2,30,MED,SCRP,none,none,none
+,PARROT,Scaridae,emerald,niusj,Nicholsina usta,2,30,MED,SCRP,none,none,none
+131,PARROT,Scaridae,greenblotch,spata,Sparisoma atomarium,2,25.0,MED,SCRP,none,none,yes
+,PARROT,Scaridae,greenblotch,spatj,Sparisoma atomarium,2,25.0,MED,SCRP,none,none,yes
+132,PARROT,Scaridae,midnight,sccla,Scarus coelestinus,2.0,77.0,LARGE,EXCV,minor,none,yes
+133,PARROT,Scaridae,princess,sctaa,Scarus taeniopterus,2.0,35.00,MED,SCPR,minor,none,yes
+134,PARROT,Scaridae,queen,scvea,Scarus vetula,2.0,61.0,LARGE,SCRP,minor,none,yes
+,PARROT,Scaridae,queen,scvej,Scarus vetula,2.0,61.0,LARGE,SCRP,minor,none,yes
+136,PARROT,Scaridae,rainbow,scgua,Scarus guacamaia,2.0,120.0,LARGE,EXCV,minor,none,yes
+137,PARROT,Scaridae,redband,spaua,Sparisoma aurofrenatum,2.0,28.0,MED,SCRP,minor,none,yes
+,PARROT,Scaridae,redband,spauj,Sparisoma aurofrenatum,2.0,28.0,MED,SCRP,minor,none,yes
+139,PARROT,Scaridae,redtail,spcha,Sparisoma chrysopterum,2.0,46.0,MED,SCRP,minor,none,yes
+,PARROT,Scaridae,redtail,spchj,Sparisoma chrysopterum,2.0,46.0,MED,SCRP,minor,none,yes
+141,PARROT,Scaridae,stoplight,spvia,Sparisoma viride,2.0,64.0,LARGE,EXCV,minor,none,yes
+,PARROT,Scaridae,stoplight,spvij,Sparisoma viride,2.0,64.0,LARGE,EXCV,none,none,yes
+143,PARROT,Scaridae,striped,sccra,Scarus iserti,2.0,35.0,MED,SCRP,minor,none,yes
+,PARROT,Scaridae,striped/princess,sccrj,Scarus iserti,2.0,35.0,MED,SCRP,none,none,yes
+145,PARROT,Scaridae,yellowtail,sprua,Sparisoma rubripinne,2.0,47.8,MED,SCRP,minor,none,yes
+,PARROT,Scaridae,yellowtail,spruj,Sparisoma rubripinne,2.0,47.8,MED,SCRP,none,none,yes
+,PEMPHERICDAE,,glassy sweeper,pesca,Pempheris schomburgki,3.11,15.0,MEDSMALL,NPLA,none,none,none
+,PORCUPINE,Diodontidae,balloonfish,dihoa,Diodon holocanthus,3.3,50.0,MED,SINV,minor,none,yes
+149,PORCUPINE,Diodontidae,porcupine,dihya,Diodon hystrix,3.2,91.00,LARGE,SINV,minor,none,yes
+218,PORGY,Sparidae,jolthead,cabaa,Calamus bajonado,3.2,85.7318,LARGE,SAND,minor,yes,none
+150,PORGY,Sparidae,Pluma,acpea,Calamus pennatula,3.3,37,MED,SAND,yes,none,none
+151,PORGY,Sparidae,saucereye,cacaa,Calamus calamus,3.3,56.0,LARGE,SAND,minor,none,none
+,PORGY,Sparidae,sheepshead,capea,Calamus penna,3.44,46,MED,SAND,yes,none,none
+152,PUFFER,,Bandtail,spspa,Sphoeroides spengleri,3.2,30.0,MEDSMALL,SINV,none,none,yes
+217,PUFFER,,goldface toby,cajaa,Canthigaster jamestyleri,3.1,5.3,SMALL,SINV,none,none,yes
+153,PUFFER,,Marbled,spdoa,Sphoeroides dorsalis,3.2,38.8,MED,SINV,none,none,none
+154,PUFFER,,Sharpnose,caroa,Canthigaster rostrata,3.0,12.0,MEDSMALL,SINV,none,none,yes
+,PUFFER,,Sharpnose,caroj,Canthigaster rostrata,3.0,12.0,MEDSMALL,SINV,none,none,yes
+,REMORA,,common remora,rerea,Remora remora,3.08,86.4,LARGE,DPLA,yes,none,none
+210,SCORPION,Scorpaenidae,plumed scorpion,scgra,Scorpaena grandicornis,3.7,30.0,MED,MINV,none,none,none
+209,SCORPION,Scorpaenidae,reef scorpion,sccaa,Scorpaenodes caribbaeus,3.6,12,MEDSMALL,MINV,none,none,none
+211,SCORPION,Scorpaenidae,spotted scorpion,scpla,Scorpaena plumieri,3.8,45.0,MED,MINV,minor,none,yes
+215,SERRANID,Serranidae,bantum bass,paina,Parasphyraenops incisus,3.4,5.3,SMALL,DPLA,none,none,none
+102,SERRANID,Serranidae,barred,hypua,Hypoplectrus puella,3.7,15.2,SMALL,MINV,none,none,yes
+,SERRANID,Serranidae,barred,hypuj,Hypoplectrus puella,3.7,15.2,SMALL,MINV,none,none,yes
+104,SERRANID,Serranidae,black,hynia,Hypoplectrus nigricans,4,9.7,MEDSMALL,MINV,none,none,yes
+67,SERRANID,Serranidae,black,myboa,Mycteroperca bonaci,4.5,150,LARGE,PISC,yes,yes,yes
+105,SERRANID,Serranidae,blue,hygea,Hypoplectrus gemma,3.6,8.2,MEDSMALL,MINV,none,none,yes
+106,SERRANID,Serranidae,butter,hyuna,Hypoplectrus unicolor,4,8,MEDSMALL,MINV,none,none,yes
+220,SERRANID,Serranidae,candy basslet,lica,Liopropoma carmabi,3,6,SMALL,MINV,none,none,yes
+68,SERRANID,Serranidae,coney,epfua,Cephalopholis fulvus,4.1,41,MED,MCAR,yes,minor,yes
+,SERRANID,Serranidae,coney,epfuj,Cephalopholis fulvus,4.1,41,MED,MCAR,none,none,yes
+82,SERRANID,Serranidae,creole fish,pafua,Paranthias furcifer,3.1,40.89,MED,DPLA,none,none,minor
+17,SERRANID,Serranidae,fairy basslet,grloa,Gramma loreto,3.3,8,SMALL,MINV,none,none,yes
+,SERRANID,Serranidae,fairy basslet,grloj,Gramma loreto,3.3,8,SMALL,MINV,none,none,yes
+113,SERRANID,Serranidae,golden,hygma,Hypoplectrus gummigutta,3.6,8.3,MEDSMALL,MINV,none,none,yes
+70,SERRANID,Serranidae,graysby,cecra,Cephalopholis cruentatus,4.2,42.6,MED,MCAR,minor,none,none
+,SERRANID,Serranidae,graysby,cecrj,Cephalopholis cruentatus,4.2,42.6,MED,MCAR,none,none,none
+168,SERRANID,Serranidae,greater soapfish,rysaa,Rypticus saponaceus,4.1,35.0,MED,MCAR,minor,none,yes
+,SERRANID,Serranidae,greater soapfish,rysaj,Rypticus saponaceus,4.1,35.0,MED,MCAR,none,none,yes
+12,SERRANID,Serranidae,harlequin bass,setia,Serranus tigrinus,3.7,29 FL,MEDSMALL,SCRP,none,none,yes
+,SERRANID,Serranidae,harlequin bass,setij,Serranus tigrinus,3.7,29 FL,MEDSMALL,SCRP,none,none,yes
+107,SERRANID,Serranidae,indigo,hyina,Hypoplectrus indigo,3.6,9,MEDSMALL,MINV,none,none,yes
+72,SERRANID,Serranidae,jewfish,epita,Epinephelus itajara,4.1,250,LARGE,MCAR,minor,yes,none
+108,SERRANID,Serranidae,masked,hyspa,Hypoplectrus providencianus,3.6,20,MEDSMALL,MINV,none,none,yes
+14,SERRANID,Serranidae,mutton hamlet,alafa,Alphestes afer,3.5,33,MED,MCAR,minor,none,yes
+73,SERRANID,Serranidae,nassau,epsta,Epinephelus striatus,4.1,122,LARGE,MCAR,yes,yes,yes
+18,SERRANID,Serranidae,peppermint,lirua,Liopropoma rubre,3,3.7,SMALL,MINV,none,none,yes
+74,SERRANID,Serranidae,red,epmoa,Epinephelus morio,3.6,125,LARGE,MCAR,yes,yes,yes
+75,SERRANID,Serranidae,red hind,epgua,Epinephelus guttatus,3.9,76,MED,MCAR,yes,yes,yes
+77,SERRANID,Serranidae,rock hind,epada,Epinephelus adscensionis,3.5,61,LARGE,MCAR,yes,yes,none
+109,SERRANID,Serranidae,shy,hygua,Hypoplectrus guttavarius,3.6,8.2,MEDSMALL,MINV,none,none,yes
+,SERRANID,Serranidae,spotted soapfish,rysua,Rypticus subbifrenatus ,4,18.0,MEDSMALL,MCAR,yes,none,none
+79,SERRANID,Serranidae,tiger,mytia,Mycteroperca tigris,4.5,101,LARGE,PISC,yes,none,yes
+15,SERRANID,Serranidae,tobaccofish,setaa,Serranus tabacarius,4.2,22.0,MEDSMALL,MINV,none,none,yes
+,SERRANID,Serranidae,tobaccofish,setaj,Serranus tabacarius,4.2,22.0,MEDSMALL,MINV,none,none,yes
+16,SERRANID,Serranidae,twinspot/two spot,sefla,Serranus flaviventris,4.2,7.5,SMALL,MINV,none,none,yes
+,SERRANID,Serranidae,unidentified juvenile,hyspj,Hypoplectrus unidentified juvenile,,,,,,,
+223,SERRANID,Serranidae,vieja,sedea,Serranus dewegeri,4.2,22,MED,MINV,none,none,yes
+114,SERRANID,Serranidae,yellow belly,hyaba,Hypoplectrus aberrans,3.6,13,MEDSMALL,MINV,none,none,yes
+81,SERRANID,Serranidae,yellowfin,myvea,Mycteroperca venenosa,4.5,100,LARGE,PISC,yes,yes,yes
+80,SERRANID,Serranidae,yellowmouth,myina,Mycteroperca interstitialis,4.5,84,LARGE,PISC,yes,none,yes
+110,SERRANID,Serranidae,yellowtail,hycha,Hypoplectrus chlorurus,3.8,12.7,MEDSMALL,MINV,none,none,yes
+212,SHARK,Ginglymostomatidae,nurse,gicia,Ginglymostoma cirratum,3.8,430.0,LARGE,MCAR,minor,none,none
+221,SNAPPER,Lutjanidae,black snapper,apdea,Apsilus dentatus,4.1,65.0,LARGE,MCAR,minor,minor,none
+158,SNAPPER,Lutjanidae,cubera,lucya,Lutjanus cyanopterus,4.2,160.00,LARGE,MINV,yes,yes,none
+159,SNAPPER,Lutjanidae,dog,lujoa,Lutjanus jocu,4.3,128.0,LARGE,MINV,yes,minor,yes
+160,SNAPPER,Lutjanidae,gray,lugra,Lutjanus griseus,4.2,86.0,LARGE,MINV,yes,yes,yes
+161,SNAPPER,Lutjanidae,lane,lusya,Lutjanus synagris,4.0,60.0,MED,MINV,yes,yes,yes
+162,SNAPPER,Lutjanidae,mahogany,lumaa,Lutjanus mahogoni,4.4,48.0,MED,MINV,yes,yes,none
+163,SNAPPER,Lutjanidae,mutton,luana,Lutjanus analis,3.9,94.0,LARGE,MINV,yes,yes,yes
+164,SNAPPER,Lutjanidae,red,lucaa,Lutjanus campechanus,4,100.0,LARGE,MINV,yes,yes,none
+165,SNAPPER,Lutjanidae,schoolmaster,luapa,Lutjanus apodus,4.3,67.2,LARGE,MINV,yes,minor,none
+166,SNAPPER,Lutjanidae,yellowtail,occha,Ocyurus chrysurus,4.0,86.3,LARGE,MCAR,yes,yes,yes
+,SNAPPER,Lutjanidae,yellowtail,occhj,Ocyurus chrysurus,4.0,86.3,LARGE,MCAR,yes,yes,yes
+,SNOOK,Centropomidae,common,ceuna,Centropomus undecimalis,4.41,140,LARGE,MCAR,yes,yes,none
+170,SPADEFISH,Ephippidae,atlantic spadefish,chfaa,Chaetodipterus faber,3.3,91.0,LARGE,SINV,minor,yes,yes
+213,STINGRAY,Dasyatidae,southern,daama,Dasyatis americana,3.6,200.0,LARGE,SAND,yes,yes,none
+,STINGRAY,Dasyatidae,spotted eagle ray,aenaa,Aetobatus narinari,3.24,330,LARGE,SAND,yes,yes,none
+214,STINGRAY,Dasyatidae,yellow,urjaa,Urolophus jamaicensis,3.5,76.0,LARGE,MINV,none,none,none
+171,SURGEON,Acanthuridae,blue tang,accoa,Acanthurus coeruleus,2.0,39.0,MED,TURF,minor,none,yes
+,SURGEON,Acanthuridae,blue tang,accoj,Acanthurus coeruleus,2.0,39.0,MED,TURF,none,none,yes
+173,SURGEON,Acanthuridae,doctorfish,accha,Acanthurus chirurgus,2.0,39.0,MED,SCRP,minor,none,yes
+,SURGEON,Acanthuridae,doctorfish,acchj,Acanthurus chirurgus,2.0,39.0,MED,SCRP,none,none,yes
+175,SURGEON,Acanthuridae,ocean,acbaa,Acanthurus bahianus,2.0,38.1,MED,SCRP,minor,none,yes
+,SURGEON,Acanthuridae,ocean,acbaj,Acanthurus bahianus,2.0,38.1,MED,SCRP,none,none,yes
+178,TARPON,Megalopidae,tarpon,meata,Megalops atlanticus,3.975,250.0,LARGE,MCAR,yes,yes,yes
+179,TILEFISH,Malacanthidae,sand,mapla,Malacanthus plumieri,3.6,83.37,LARGE,MCAR,none,none,none
+180,TRIGGER,Balistidae,black durgon,menia,Melicthys niger,2.4,50.0,MED,OMNI,minor,none,yes
+181,TRIGGER,Balistidae,gray,bacaa,Balistes capriscus,3.6,60.0,LARGE,MINV,yes,yes,yes
+,TRIGGER,Balistidae,ocean,casua,Canthidermis sufflamen,3.24,65,LARGE,OMNI,yes,yes,yes
+182,TRIGGER,Balistidae,queen,bavea,Balistes vetula,3.4,60.0,MED,MINV,minor,yes,yes
+,TRIGGER,Balistidae,sargassum,xaria,Xanthicthys ringens,3.09,25,MEDSMALL,DPLA,yes,none,yes
+,TRUMPETFISH,Fistulariidae,cornet fish,fitaa,Fistularia tabacaria,3.46,200.0,LARGE,PISC,minor,none,none
+183,TRUMPETFISH,Aulostomidae,trumpetfish,aumaa,Aulostomus maculatus,4.3,100.0,LARGE,PISC,minor,none,minor
+,TRUMPETFISH,Aulostomidae,trumpetfish,aumaj,Aulostomus maculatus,4.3,100.0,LARGE,PISC,none,none,minor
+185,TRUNKFISH,Ostraciidae,Smooth,latra,Lactophrys triqueter,3.1,37.0,MED,OMNI,minor,none,yes
+,TRUNKFISH,Ostraciidae,Smooth,latrj,Lactophrys triqueter,3.1,37.0,MED,OMNI,minor,none,yes
+186,TRUNKFISH,Ostraciidae,Spotted,labia,Lactophrys bicaudalis,3.0,48.0,MED,OMNI,none,none,yes
+187,WRASSE,Labridae,black ear,hapoa,Halichoeres poeyi,3.4,20.0,SMALL,MINV,none,none,yes
+,WRASSE,Labridae,black ear,hapoj,Halichoeres poeyi,3.4,20.0,SMALL,MINV,none,none,yes
+189,WRASSE,Labridae,blue head,thbia,Thalassoma bifasciatum,3.3,25.0,MEDSMALL,DPLA,none,none,yes
+,WRASSE,Labridae,blue head,thbij,Thalassoma bifasciatum,3.3,25.0,MEDSMALL,DPLA,none,none,yes
+191,WRASSE,Labridae,Clown,hamca,Halichoeres maculipinnia,3.3,18.0,MEDSMALL,MINV,none,none,yes
+,WRASSE,Labridae,Clown,hamcj,Halichoeres maculipinnia,3.3,18.0,MEDSMALL,MINV,none,none,yes
+193,WRASSE,Labridae,creole,clpaa,Clepticus parrae,3.3,30.0,MED,DPLA,minor,none,yes
+,WRASSE,Labridae,creole,clpaj,Clepticus parrae,3.3,30.0,MED,DPLA,none,none,yes
+224,WRASSE,Labridae,green razor,xyspa,Xyrichtys splendens,3.1,17.5,MEDSMALL,SAND,none,none,yes
+195,WRASSE,Labridae,hogfish,lamaa,Lachnolaimus maximus,3.9,91.0,LARGE,MINV,minor,yes,yes
+216,WRASSE,Labridae,painted wrasse,hacda,Halichoeres caudalis,3.4,12.8,MEDSMALL,MINV,none,none,none
+196,WRASSE,Labridae,puddingwife,haraa,Halichoeres radiatus,3.3,51.0,LARGE,MINV,minor,none,yes
+,WRASSE,Labridae,puddingwife,haraj,Halichoeres radiatus,3.3,51.0,LARGE,MINV,none,none,yes
+198,WRASSE,Labridae,Rainbow,hapia,Halichoeres pictus,3.5,13,MEDSMALL,MINV,none,none,yes
+,WRASSE,Labridae,Rainbow,hapij,Halichoeres pictus,3.5,13,MEDSMALL,MINV,none,none,yes
+,WRASSE,Labridae,rosy razorfish,xymaa,Xyrichtys martinicensis,3.5,15.0,MEDSMALL,SAND,none,none,yes
+200,WRASSE,Labridae,slipery dick,habia,Halichoeres bivittatus,3.45,35.0,MEDSMALL,MINV,none,none,yes
+,WRASSE,Labridae,slipery dick,habij,Halichoeres bivittatus,3.45,35.0,MEDSMALL,MINV,none,none,yes
+202,WRASSE,Labridae,spanish hog,borua,Bodianus rufus,3.4,40.0,MED,MINV,minor,none,yes
+,WRASSE,Labridae,spanish hog,boruj,Bodianus rufus,3.4,40.0,MED,MINV,none,none,yes
+204,WRASSE,Labridae,spotfin hog,bopua,Bodianus pulchellus,3.6,18.3,MEDSMALL,MINV,minor,none,yes
+,WRASSE,Labridae,spotfin hog,bopuj,Bodianus pulchellus,3.6,18.3,MEDSMALL,MINV,none,none,yes
+205,WRASSE,Labridae,yellowcheek,hacya,Halichoeres cyanocephalus,3.6,19.4,MEDSMALL,MINV,none,none,yes
+207,WRASSE,Labridae,Yellowhead,hagaa,Halichoeres garnoti,3.5,19.3,MEDSMALL,MINV,none,none,yes
+,WRASSE,Labridae,Yellowhead,hagaj,Halichoeres garnoti,3.5,19.3,MEDSMALL,MINV,none,none,yes
