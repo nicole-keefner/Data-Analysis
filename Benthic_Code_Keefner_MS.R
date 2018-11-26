@@ -16,7 +16,7 @@ library(tidyverse)
 library(tidyr)
 library(plyr)
 library(dplyr)
-
+library(ggplot2)
 
 
 ## Import coral dataset
@@ -178,8 +178,75 @@ summary(sponge_raw_longform$Transect)
 
 ## Total Counts
 # Calculate total counts
+sum(sponge_raw_longform$Count)
+sum(fish_raw_longform_reduced$Count) #why is this not a whole #?***
+
 # Total counts by year
+aggregate(sponge_raw_longform$Count, by = list(Year = sponge_raw_longform$Year), FUN = sum)
+aggregate(fish_raw_longform_reduced$Count, by = list(Year = fish_raw_longform_reduced$year), FUN = sum)
+# ***1992, 1993, and 2014 are not integers
+# ***2016 has a total count of zero
+
 # Total counts by site
+aggregate(sponge_raw_longform$Count, by = list(Site = sponge_raw_longform$Site), FUN = sum)
+aggregate(fish_raw_longform_reduced$Count, by = list(Site = fish_raw_longform_reduced$site), FUN = sum)
+# ***Grand Ghut, Monkey Pt, Muskmelon, and Pelican Ghut are not integers
+
 # Total counts by Year and Site
+sponge_total_counts <- aggregate(sponge_raw_longform$Count, by = list(Site = sponge_raw_longform$Site, Year = sponge_raw_longform$Year), FUN = sum)
+fish_total_counts <- aggregate(fish_raw_longform_reduced$Count, by = list(Site = fish_raw_longform_reduced$site, Year = fish_raw_longform_reduced$year), FUN = sum)
+
+# Graphing counts by year
+# ggplot(data = sponge_total_counts, aes(sponge_total_counts$Year, sponge_total_counts$x)) +
+#   geom_col()
+# ggplot(data = fish_total_counts, aes(fish_total_counts$Year, fish_total_counts$x)) +
+#   geom_col()
+
+# Graphing counts by site
+# ggplot(data = sponge_total_counts, aes(sponge_total_counts$Site, sponge_total_counts$x)) +
+#   geom_col()
+# ggplot(data = fish_total_counts, aes(fish_total_counts$Site, fish_total_counts$x)) +
+#   geom_col()
+
+# Create new column called Taxa, so when dataframes are combined, I know which dataset the information came from
+fish_total_counts$Taxa <- "Fish"
+sponge_total_counts$Taxa <- "Sponge"
+
+# Create new column called Year_Site to use as a key when combining datasets
+# fish_total_counts <- unite_(data = fish_total_counts, col = "Year_Site", c("Year", "Site"), remove = F)
+# sponge_total_counts <- unite_(data = sponge_total_counts, col = "Year_Site", c("Year", "Site"), remove = F)
+
+# Combine Datasets
+all_counts <- rbind(fish_total_counts, sponge_total_counts)
+
+# Grouped column charts
+Taxa <- all_counts$Taxa
+ggplot(all_counts, aes(fill = Taxa, y = all_counts$x, x = all_counts$Site)) + 
+  geom_bar(position = "dodge", stat = "identity") +
+  xlab("Site") +
+  ylab("Count")
+ggplot(all_counts, aes(fill = Taxa, y = all_counts$x, x = all_counts$Year)) + 
+  geom_bar(position = "dodge", stat = "identity") +
+  xlab("Year") +
+  ylab("Count")
+
+# ***build off the following code to create a loop so there is a graph like this for each site
+Site_Names <- c("Pelican Ghut", "Grand Ghut", "Crab Cove", "Muskmelon", "Bigelow", "White Bay", "Monkey Pt", "Guana Head")
+Bigelow <- all_counts[which(all_counts$Site == "Bigelow"),]
+ggplot(Bigelow, aes(fill = Taxa, y = Bigelow$x, x = Bigelow$Year)) + 
+  geom_bar(position = "dodge", stat = "identity") +
+  xlab("Year") +
+  ylab("Count")
+
+# ***build off the following code to create a loop so there is a graph like this for each year
+year_2009 <- all_counts[which(all_counts$Year == "2009"),]
+ggplot(year_2009, aes(fill = Taxa, y = year_2009$x, x = year_2009$Site)) + 
+  geom_bar(position = "dodge", stat = "identity") +
+  xlab("Year") +
+  ylab("Count")
+
+
+
+
 
 
