@@ -19,12 +19,13 @@ library(dplyr)
 library(ggplot2)
 
 
+
 ## Import coral dataset
 
 
 
 ## Import sponge dataset
-sponge_raw <- read.csv("Guana_Sponge_data_for_analysis.csv", header=T)
+sponge_raw <- read.csv("Guana_Sponge_data_for_analysis.csv", header = T)
 
 # Only select rows and columns for which there are values entered (sponge_raw has extraneous rows and columns)
 sponge_raw <- sponge_raw[1:557,1:65]
@@ -42,7 +43,24 @@ sponge_raw <- sponge_raw[sponge_raw$Site == "Muskmelon" | sponge_raw$Site == "Pe
                            sponge_raw$Site == "White Bay" | sponge_raw$Site == "Grand Ghut", ]
 sponge_raw$Site <- as.factor(sponge_raw$Site)
 
-# Put datast into long form (i.e. so species codes are in a single column rather than having one column for each species code)
+# Some "ghost" factors are being retained for transect and observer
+# Remove these ghost factors
+sponge_raw$Observer <- as.character(sponge_raw$Observer)
+sponge_raw <- sponge_raw[sponge_raw$Observer == "E MacLean" | sponge_raw$Observer == "L Jarecki", ]
+sponge_raw$Observer <- as.factor(sponge_raw$Observer)
+
+sponge_raw$Transect <- as.character(sponge_raw$Transect)
+sponge_raw <- sponge_raw[sponge_raw$Transect == "1" | sponge_raw$Transect == "2" | sponge_raw$Transect == "3" | 
+                           sponge_raw$Transect == "4" | sponge_raw$Transect == "T", ]
+sponge_raw$Transect <- as.factor(sponge_raw$Transect)
+
+# Create new column called "Site_Year" that combines the year and site as ####_Sitename
+sponge_raw <- transform(sponge_raw, Site_Year = paste(sponge_raw$Year, sponge_raw$Site, sep="_"))
+
+# Create new column in all datasets called Taxa, so if dataframes are combined, I know which dataset the information came from
+sponge_raw$Taxa <- "Sponge"
+
+# Put dataset into long form (i.e. so species codes are in a single column rather than having one column for each species code)
 # key = "title of new column", value = "numbers being moved around because of the key", 
 # ":" specifies which columns should be included in key
 sponge_raw_longform <- sponge_raw %>%
@@ -67,17 +85,20 @@ summary(sponge_raw_longform$Year)
 # Convert to wide form
 sponge_raw_wideform <- spread(sponge_raw_longform, Taxonomic_Group, Count)
 # ***Error because spread function doesn't work with duplicate row identifiers***
+# ***So, need to figure out how to group by site-year
 # In this case, sometimes the same transect was recorded 3 times in the same year at a given site e.g.:
 # Transect  Site      Year  Taxonomic_Group Count
 # 2         Crab Cove 1998  Agelas          0
 # 2         Crab Cove 1998  Agelas          0
 
 # Check that observations were made at every site for every year
-#check1 <- unique(expand.grid(sponge_raw_longform$Year, sponge_raw_longform$Site, KEEP.OUT.ATTRS = TRUE))
-# ***Error: cannot allocate vector of size 3.7 Gb; not enough ram?***
-# 19 years and 8 sites = 152 observations
-# because this dataset has ### unique observations, every site was visited for all 19 years?
+# 19 years and 8 sites = 152 observations expected
+check1 <- unique(sponge_raw_longform$Site_Year)
+# because check1 has 150 levels, almmost every site was visited for all 19 years
+# After closer inspection, 1993_Crab Cove and 2014_Pelican Ghut are missing
 
+# Create new subset for all the times where transect length != 30 m
+not30 <-sponge_raw[sponge_raw$Transect.Length..m. != "30", 1:7]
 
 
 ## Import fish datasets (see "Fish Metadata.docx" for more information)
@@ -100,13 +121,19 @@ fish_raw <- fish_raw[fish_raw$site == "Muskmelon" | fish_raw$site == "Pelican Gh
                          fish_raw$site == "White Bay" | fish_raw$site == "Grand Ghut", ]
 fish_raw$site <- as.factor(fish_raw$site)
 
-# Only retain observations where survey==main
+# Only retain observations where survey == main
 fish_raw$survey <- as.character(fish_raw$survey)
 fish_raw <- fish_raw[fish_raw$survey == "main", ]
 fish_raw$survey <- as.factor(fish_raw$survey)
 
-# Only retain observations where depth==30 (feet)
+# Only retain observations where depth == 30 (feet)
 fish_raw <- fish_raw[which(fish_raw$depth == '30'), ]
+
+# Create new column called "Site_Year" that combines the year and site as ####_Sitename
+fish_raw <- transform(fish_raw, Site_Year = paste(fish_raw$year, fish_raw$site, sep = "_"))
+
+# Create new column in all datasets called Taxa, so if dataframes are combined, I know which dataset the information came from
+fish_raw$Taxa <- "Fish"
 
 # Put fish_raw into long form (i.e. so species codes are in a single column rather than having one column for each species code)
 # key = "title of new column", value = "numbers being moved around because of the key", 
@@ -134,7 +161,8 @@ fish_raw_longform <- fish_raw_longform[!is.na(fish_raw_longform$Count),]
 # Keep only the columns that I think might be relevant
 fish_raw_longform_reduced <- fish_raw_longform[,c("ï..notes", "duration", "year", "month", "day", "site", "transect", 
                                 "fixed_transect", "Count", "Species_Code", "Age_Class", "Family.x", "Family.y", "Family2", 
-                                "Commonname", "scientific.name", "Trophic.Level", "Max.body.size", "Dietary.group")]
+                                "Commonname", "scientific.name", "Trophic.Level", "Max.body.size", "Dietary.group", 
+                                "Site_Year", "Taxa")]
 
 # Can also make Year a factor instead of an integer
 fish_raw_longform_reduced$year <- as.factor(fish_raw_longform_reduced$year)
@@ -150,26 +178,48 @@ fish_raw_longform_minimum <- fish_raw_longform_reduced[,c("ï..notes", "year", "m
                                                   "fixed_transect", "Count", "Species_Code", "Age_Class")]
 
 # Convert to wide form
-fish_raw_wideform <- spread(fish_raw_longform_mini, Species_Code, Count)
+fish_raw_wideform <- spread(fish_raw_longform_minimum, Species_Code, Count)
 # Note that there are 2 times more observations now than in the original raw wide format - 
 summary(fish_raw$site)
 summary(fish_raw_wideform$site)
 # this is because A/J are in different rows, not listed in different columns
 
 # Check that observations were made at every site for every year
-#check2 <- unique(expand.grid(fish_raw_wideform$year, fish_raw_wideform$site, KEEP.OUT.ATTRS = TRUE))
-# 25 years and 8 sites = 200 observations
-# because this dataset has 200 unique observations, every site was visited for all 25 years
+# 25 years and 8 sites = 200 observations expected
+check2 <- unique(fish_raw_longform_reduced$Site_Year)
+# because check2 has 200 levels, every site was visited for all 25 years
+
 
 # ***Add transect length from sponge dataset to the corresponding observations in the fish dataset?***
 summary(fish_raw_longform_reduced$transect)
 summary(sponge_raw_longform$Transect)
 # Because the levels are not the same, this may be difficult
 
+# Check that all of the counts are integers
+sum(sponge_raw_longform$Count)
+sum(fish_raw_longform_reduced$Count)
+# ***There is definitely a more efficient way to do this***
+# Because the sum of fish counts has a decimal, create a subset of non-zero counts to ID the culprit
+fish_nozero <- fish_raw_longform_reduced[fish_raw_longform_reduced$Count != "0", ]
+# Looks like there are some 1.5's and 1.875's, so create a subset that removes these observations to 
+# determine if there are other non-integer values for Count
+fish_integertest <- fish_nozero[fish_nozero$Count == 1 | fish_nozero$Count >= 2, ]
+# Now try again,
+sum(fish_integertest$Count)
+# From a closer look at the data: 1.5, 1.875, 3.75, 4.5, 7.5, 10.5, 16.5, 19.5, 22.5, 28.5, 31.5, 37.5, and 49.5
+# are identified as non-integers, but there may be more.
+
+# Check that for each Site_Year there are 3 transects
+sponge_num_transects <- as.data.frame(table(sponge_raw$Site_Year), responseName="num_transects")
+fish_num_transects <- as.data.frame(table(fish_raw$Site_Year), responseName="num_transects")
+# Create subsets that only include Site_Year's with more than 3 transects
+sponge_num_transects <- sponge_num_transects[sponge_num_transects$num_transects > 3, ]
+fish_num_transects <- fish_num_transects[fish_num_transects$num_transects > 3, ]
+
+# ***Check that the transects within a given site-year are not repeated***
 
 
 ## Summary of Importing Datasets
-# ***Check that each year for each site there are 3 transects***
 # *** name of coral data for analysis
 # sponge_raw_longform for analysis
 # fish_raw_longform_reduced for analysis
@@ -208,10 +258,6 @@ fish_total_counts <- aggregate(fish_raw_longform_reduced$Count, by = list(Site =
 # ggplot(data = fish_total_counts, aes(fish_total_counts$Site, fish_total_counts$x)) +
 #   geom_col()
 
-# Create new column called Taxa, so when dataframes are combined, I know which dataset the information came from
-fish_total_counts$Taxa <- "Fish"
-sponge_total_counts$Taxa <- "Sponge"
-
 # Create new column called Year_Site to use as a key when combining datasets
 # fish_total_counts <- unite_(data = fish_total_counts, col = "Year_Site", c("Year", "Site"), remove = F)
 # sponge_total_counts <- unite_(data = sponge_total_counts, col = "Year_Site", c("Year", "Site"), remove = F)
@@ -242,11 +288,8 @@ ggplot(Bigelow, aes(fill = Taxa, y = Bigelow$x, x = Bigelow$Year)) +
 year_2009 <- all_counts[which(all_counts$Year == "2009"),]
 ggplot(year_2009, aes(fill = Taxa, y = year_2009$x, x = year_2009$Site)) + 
   geom_bar(position = "dodge", stat = "identity") +
-  xlab("Year") +
+  xlab("Site") +
   ylab("Count")
-
-
-
 
 
 
